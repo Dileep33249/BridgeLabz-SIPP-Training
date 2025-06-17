@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class PositiveNegativeZero {
+public class CheckNumberSign {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
 
         if (number > 0)
             System.out.println("Positive");
