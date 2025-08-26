@@ -1,0 +1,31 @@
+CLASS TextEditor
+    ATTRIBUTE:
+        text
+        undoStack   // Stack to store previous states of text
+
+    CONSTRUCTOR()
+        SET text = ""
+        CREATE empty undoStack
+
+    METHOD type(newText)
+        PUSH current text INTO undoStack
+        APPEND newText TO text
+
+    METHOD undo()
+        IF undoStack is NOT empty
+            SET text = POP from undoStack
+        ELSE
+            PRINT "Nothing to undo"
+
+    METHOD showText()
+        PRINT text
+
+MAIN
+    CREATE editor = new TextEditor()
+
+    CALL editor.type("Hello")
+    CALL editor.type(" World")
+    CALL editor.showText()   // Output: Hello World
+
+    CALL editor.undo()
+    CALL editor.showText()   // Output: Hello

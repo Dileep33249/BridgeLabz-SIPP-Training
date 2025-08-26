@@ -1,0 +1,47 @@
+CLASS Customer
+    ATTRIBUTES:
+        name
+        type   // "normal" or "emergency"
+
+    CONSTRUCTOR(name, type)
+        SET this.name = name
+        SET this.type = type
+
+CLASS CallCenterQueue
+    ATTRIBUTES:
+        normalQueue   // Queue for normal customers
+        emergencyQueue  // Queue for emergency customers
+
+    CONSTRUCTOR()
+        CREATE empty normalQueue
+        CREATE empty emergencyQueue
+
+    METHOD addCustomer(customer)
+        IF customer.type == "emergency"
+            ENQUEUE customer INTO emergencyQueue
+        ELSE
+            ENQUEUE customer INTO normalQueue
+
+    METHOD serveCustomer()
+        IF emergencyQueue is NOT empty
+            DEQUEUE customer FROM emergencyQueue
+            PRINT "Serving emergency customer: " + customer.name
+        ELSE IF normalQueue is NOT empty
+            DEQUEUE customer FROM normalQueue
+            PRINT "Serving normal customer: " + customer.name
+        ELSE
+            PRINT "No customers in queue"
+
+MAIN
+    CREATE callCenter = new CallCenterQueue()
+
+    CREATE c1 = new Customer("Alice", "normal")
+    CREATE c2 = new Customer("Bob", "emergency")
+    CREATE c3 = new Customer("Charlie", "normal")
+
+    CALL callCenter.addCustomer(c1)
+    CALL callCenter.addCustomer(c2)
+    CALL callCenter.addCustomer(c3)
+
+    CALL callCenter.serveCustomer()   // Bob served first (emergency)
+    CALL callCenter.serveCustomer()   // Alice served

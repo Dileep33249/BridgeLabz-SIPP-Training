@@ -1,0 +1,22 @@
+CLASS Member
+    ATTRIBUTES:
+        name
+        id
+        membershipDate
+        expiryDate
+    
+    CONSTRUCTOR(name, id, membershipDate, expiryDate)
+        SET this.name = name
+        SET this.id = id
+        SET this.membershipDate = membershipDate
+        SET this.expiryDate = expiryDate
+    
+    METHOD checkMembershipValidity(currentDate)
+        IF currentDate <= expiryDate
+            PRINT "Membership is valid"
+        ELSE
+            PRINT "Membership expired"
+
+MAIN
+    CREATE member1 = new Member("Alice", 101, "01-01-2024", "01-01-2025")
+    CALL member1.checkMembershipValidity("10-12-2024")

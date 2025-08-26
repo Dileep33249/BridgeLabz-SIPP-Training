@@ -1,0 +1,15 @@
+MAIN
+    CREATE HashMap<String, Integer> studentScores
+
+    ADD ("Alice", 85) TO studentScores
+    ADD ("Bob", 92) TO studentScores
+    ADD ("Charlie", 78) TO studentScores
+    ADD ("David", 95) TO studentScores
+
+    // Find highest scorer using streams
+    highest = studentScores.entrySet()
+                .stream()
+                .max( compare by value )
+                .get()
+
+    PRINT "Top Scorer: " + highest.key + " with " + highest.value + " marks"

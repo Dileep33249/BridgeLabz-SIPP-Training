@@ -1,0 +1,27 @@
+CLASS Employee
+    ATTRIBUTES:
+        name
+        department
+        salary
+    
+    CONSTRUCTOR(name, department, salary)
+        SET this.name = name
+        SET this.department = department
+        SET this.salary = salary
+
+MAIN
+    CREATE ArrayList<Employee> employees
+
+    ADD new Employee("Alice", "HR", 40000) TO employees
+    ADD new Employee("Bob", "IT", 60000) TO employees
+    ADD new Employee("Charlie", "Finance", 55000) TO employees
+    ADD new Employee("David", "IT", 65000) TO employees
+
+    // Filter employees by department using streams
+    itEmployees = employees.stream()
+                    .filter(emp -> emp.department == "IT")
+                    .collect(toList)
+
+    PRINT "Employees in IT Department:"
+    FOR each emp IN itEmployees
+        PRINT emp.name + " - " + emp.salary
