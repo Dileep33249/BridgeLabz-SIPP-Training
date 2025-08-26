@@ -1,0 +1,36 @@
+CLASS Pet
+    ATTRIBUTES:
+        name
+        age
+        type
+    
+    CONSTRUCTOR(name, age, type)
+        SET this.name = name
+        SET this.age = age
+        SET this.type = type
+    
+    METHOD displayInfo()
+        PRINT "Name: " + name
+        PRINT "Age: " + age
+        PRINT "Type: " + type
+
+CLASS Dog EXTENDS Pet
+    CONSTRUCTOR(name, age)
+        CALL super(name, age, "Dog")
+
+CLASS Cat EXTENDS Pet
+    CONSTRUCTOR(name, age)
+        CALL super(name, age, "Cat")
+
+CLASS Bird EXTENDS Pet
+    CONSTRUCTOR(name, age)
+        CALL super(name, age, "Bird")
+
+MAIN
+    CREATE dog1 = new Dog("Tommy", 2)
+    CREATE cat1 = new Cat("Kitty", 1)
+    CREATE bird1 = new Bird("Coco", 3)
+
+    CALL dog1.displayInfo()
+    CALL cat1.displayInfo()
+    CALL bird1.displayInfo()
