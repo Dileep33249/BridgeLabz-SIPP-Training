@@ -1,0 +1,15 @@
+Pseudo-code: Healthcare Diagnosis Engine
+1. Define interface DiagnosisStrategy { diagnose(List<String> symptoms) }
+2. Implement strategies:
+   - RuleBasedDiagnosis implements DiagnosisStrategy
+   - AIBasedDiagnosis implements DiagnosisStrategy
+   - ProbabilityBasedDiagnosis implements DiagnosisStrategy
+3. Define class DiagnosisContext
+   - Attribute: DiagnosisStrategy strategy
+   - Method: setStrategy(strategy)
+   - Method: executeDiagnosis(symptoms) -> strategy.diagnose(symptoms)
+4. In main:
+   - Create DiagnosisContext
+   - Set RuleBasedDiagnosis -> diagnose fever, cough, fatigue
+   - Set AIBasedDiagnosis -> diagnose headache, dizziness
+   - Tomorrow: Add new GeneticPatternDiagnosis without modifying old code

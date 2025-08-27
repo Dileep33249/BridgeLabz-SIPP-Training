@@ -1,0 +1,12 @@
+Pseudo-code: Food Delivery System
+1. Define class Customer { name, address }
+2. Define class Restaurant { name, location }
+3. Define class DeliveryBoy { name, contact }
+4. Define class Order
+   - Attributes: Customer, Restaurant, DeliveryBoy, orderDetails
+   - Method: showOrderDetails()
+       print customer, restaurant, delivery boy, and items
+5. In main:
+   - Create objects of Customer, Restaurant, DeliveryBoy
+   - Create an Order (composition)
+   - Display order details

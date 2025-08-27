@@ -1,0 +1,21 @@
+Pseudo-code: Restaurant POS Billing System
+1. Define abstract class/interface TaxCalculator { calculateTax(amount) }
+   - FoodTax implements TaxCalculator -> 5%
+   - BeverageTax implements TaxCalculator -> 12%
+   - ImportedTax implements TaxCalculator -> 5% + customs
+2. Define interface DiscountPolicy { applyDiscount(amount) }
+   - NoDiscount
+   - FlatDiscount(100 off)
+   - PercentageDiscount(10% off)
+3. Define class Item { name, price, TaxCalculator tax }
+4. Define class Bill
+   - List<Item> items
+   - DiscountPolicy discount
+   - Method calculateTotal():
+       total = sum(item.price + tax)
+       total = discount.applyDiscount(total)
+       return total
+5. In main:
+   - Create items (Paneer Tikka, Coke, Imported Cheese)
+   - Apply PercentageDiscount
+   - Show final bill

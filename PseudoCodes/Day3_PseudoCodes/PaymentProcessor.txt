@@ -1,0 +1,10 @@
+Pseudo-code: Payment Processor with Generics
+1. Define generic class Transaction<T>
+   - Attribute: T paymentMethod
+   - Method: processTransaction()
+       print type of payment and success message
+2. Define classes UPI, Card, NetBanking
+   - Each with attributes (id, details)
+3. In main:
+   - Create Transaction<UPI>, Transaction<Card>, Transaction<NetBanking>
+   - Call processTransaction() for each

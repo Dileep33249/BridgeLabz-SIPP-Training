@@ -1,0 +1,13 @@
+Pseudo-code: Traffic Signal Simulation
+1. Define enum TrafficLight { RED, GREEN, YELLOW }
+2. Create class TrafficSignal
+   - Attribute: currentLight (TrafficLight)
+   - Method: switchLight()
+      if RED -> set GREEN
+      if GREEN -> set YELLOW
+      if YELLOW -> set RED
+   - Method: startSimulation()
+      loop forever:
+         print currentLight
+         wait for interval
+         switchLight()

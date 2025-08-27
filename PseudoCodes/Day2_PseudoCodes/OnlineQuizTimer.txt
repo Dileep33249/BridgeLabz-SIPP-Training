@@ -1,0 +1,9 @@
+Pseudo-code: Online Quiz Timer
+1. Define array slots[n] to hold time for each question
+2. Initialize each slot with duration (e.g., 30 sec)
+3. For each question in slots:
+   while time > 0:
+      decrement time
+      if time <= 5:
+         print "Warning: Few seconds left"
+4. Go to next slot until quiz ends

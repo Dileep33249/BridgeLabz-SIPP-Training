@@ -1,0 +1,15 @@
+Pseudo-code: Employee Bonus Distribution Engine
+1. Define class Employee { name, dept, rating, baseSalary }
+2. Input: List<Employee>
+3. Group by department (Streams -> Collectors.groupingBy)
+4. For each department:
+   - Calculate total salary
+   - Bonus pool = 10% of total salary
+   - Distribute pool proportionally by ratings
+     share = (emp.rating / totalRating) * pool
+5. Output: Department-wise, Employee-wise bonus distribution
+6. Example:
+   IT Pool = 100000
+   A (5) -> 50000
+   B (3) -> 30000
+   C (2) -> 20000

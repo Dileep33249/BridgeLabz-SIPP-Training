@@ -1,0 +1,10 @@
+Pseudo-code: Hospital Department Mapper
+1. Define class Doctor { name, specialization }
+2. Define Map<String, List<Doctor>> hospital
+   - Example: "Cardiology" -> [Dr. A, Dr. B]
+3. Insert doctors into hospital map
+4. To filter:
+   - input specialization
+   - for each department in map:
+       filter doctors with matching specialization
+   - print result list

@@ -1,0 +1,8 @@
+Pseudo-code: Job Scheduler
+1. Define class Job
+   - Attributes: id, deadline, processingTime
+2. Create PriorityQueue<Job> based on deadline, then processingTime
+3. Insert jobs into queue
+4. While queue not empty:
+   - poll job with highest priority
+   - simulate processing (print id, time taken)

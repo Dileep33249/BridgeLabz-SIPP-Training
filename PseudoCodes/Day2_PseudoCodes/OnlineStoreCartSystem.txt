@@ -1,0 +1,10 @@
+Pseudo-code: Online Store Cart System
+1. Define class Item { name, price }
+2. Define List<Item> cart
+3. Define generic method calculateTotal(cart)
+   - total = 0
+   - for each item in cart: total += price
+   - return total
+4. In main:
+   - Add items to cart
+   - Print total price

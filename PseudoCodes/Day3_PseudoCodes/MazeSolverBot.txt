@@ -1,0 +1,12 @@
+Pseudo-code: Maze Solver Bot
+1. Represent maze as 2D grid (0 = path, 1 = wall)
+2. Define recursive method solve(x, y)
+   - if destination reached -> return true
+   - mark current cell as visited
+   - try moving UP, DOWN, LEFT, RIGHT recursively
+   - if move successful -> return true
+   - else backtrack (unmark cell)
+   - return false if no path found
+3. In main:
+   - Call solve(startX, startY)
+   - Print solution path if exists

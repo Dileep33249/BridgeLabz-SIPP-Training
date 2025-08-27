@@ -1,0 +1,11 @@
+Pseudo-code: Patient Record Hashing
+1. Define class Patient { id, name, age, disease }
+2. Define HashMap<Integer, Patient> patientDB
+3. Operations:
+   - addPatient(patient)
+   - getPatient(id)
+   - updatePatient(id, newDetails)
+   - deletePatient(id)
+4. In main:
+   - Insert patients into HashMap
+   - Perform retrieve, update, and delete

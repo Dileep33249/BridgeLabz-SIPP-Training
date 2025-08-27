@@ -1,0 +1,9 @@
+Pseudo-code: Library Book Filter
+1. Define class Book { title, year, rating }
+2. Define List<Book> library
+3. Use Stream filter:
+   - library.stream()
+       .filter(book.year > 2015)
+       .filter(book.rating > 4.5)
+       .collect(toList)
+4. Print filtered books

@@ -1,0 +1,14 @@
+Pseudo-code: Distributed Load Balancer (Round Robin)
+1. Define Queue<Server> servers
+2. Initialize with servers: S1, S2, S3
+3. For each request:
+   - server = servers.poll()
+   - assign request -> server
+   - servers.offer(server) (move to back)
+4. Support:
+   - addServer(S)
+   - removeServer(S)
+5. Example:
+   - R1 -> S1, R2 -> S2, R3 -> S3
+   - Add S4
+   - Continue with R4 -> S1, ...

@@ -1,0 +1,10 @@
+Pseudo-code: Smart Grid Energy Usage Tracker
+1. Data structure: Map<Zone, Map<Day, List<Reading>>>
+2. For each zone:
+   - For each day:
+       - Get readings list
+       - Find max consumption using Streams
+3. Output: Zone-wise, Day-wise peak load report
+4. Example:
+   Zone-A, 2025-08-01: [120, 90, 200, 150] -> Peak 200
+   Zone-B, 2025-08-01: [300, 350, 250] -> Peak 350

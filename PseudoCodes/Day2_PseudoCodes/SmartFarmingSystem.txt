@@ -1,0 +1,13 @@
+Pseudo-code: Smart Farming System
+1. Define abstract class Crop
+   - Abstract method: getWaterRequirement()
+   - Abstract method: harvest()
+2. Define class Rice extends Crop
+   - getWaterRequirement() -> return 500L
+   - harvest() -> print "Harvesting Rice"
+3. Define class Wheat extends Crop
+   - getWaterRequirement() -> return 300L
+   - harvest() -> print "Harvesting Wheat"
+4. In main:
+   - Create Rice, Wheat objects
+   - Print water requirements and harvest message

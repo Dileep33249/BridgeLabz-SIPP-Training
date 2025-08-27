@@ -1,0 +1,12 @@
+Pseudo-code: Medical Record Manager
+1. Define interface Searchable { search(keyword) }
+2. Define interface Printable { printReport() }
+3. Define class LabReport implements Searchable, Printable
+   - search(keyword) -> return if keyword matches test result
+   - printReport() -> print lab report details
+4. Define class Prescription implements Searchable, Printable
+   - search(keyword) -> return if keyword matches medicine name
+   - printReport() -> print prescription details
+5. In main:
+   - Create LabReport and Prescription objects
+   - Use polymorphism to call search() and printReport()

@@ -1,0 +1,12 @@
+Pseudo-code: Autocomplete Search Suggestions (Trie)
+1. Define TrieNode { Map<char, TrieNode> children, boolean isEnd, int popularity }
+2. Define class Trie
+   - insert(word, popularity)
+   - searchPrefix(prefix)
+   - collectSuggestions(node, prefix, results)
+3. For query:
+   - Traverse prefix in Trie
+   - If found, collect suggestions (DFS) with popularity sorting
+4. Example:
+   - Insert: "pizza hut", "pizza point", "pita bread", "pizzeria"
+   - Input: "pi" -> return top suggestions
