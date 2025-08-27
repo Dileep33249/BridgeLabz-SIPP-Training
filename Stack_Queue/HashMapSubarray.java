@@ -6,7 +6,7 @@ public class PrefixSum {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
-        int target=10;
+        int target=0;
    int [] arr=new int[]{1,8,3,9,1};
         System.out.println(helper(arr,target));
 

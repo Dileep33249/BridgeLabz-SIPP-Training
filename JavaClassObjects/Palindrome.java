@@ -11,7 +11,8 @@ class Palindrome {
     }
 
     void displayResult() {
-        if (isPalindrome())
+        if (isPalindrome())"
+        "
             System.out.println(text + " is a palindrome.");
         else
             System.out.println(text + " is not a palindrome.");
