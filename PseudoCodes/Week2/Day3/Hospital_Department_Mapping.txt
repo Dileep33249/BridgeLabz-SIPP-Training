@@ -1,0 +1,16 @@
+Hospital Department Mapping
+Story: Apollo Hospital needs mapping of departments to doctors.
+
+Actors:
+- Department (String)
+- Doctor (name, specialization, experienceYears)
+- Directory: Map<String, List<Doctor>>
+
+Story Example:
+Cardiology → [Dr. Mehta (15 yrs), Dr. Kapoor (10 yrs)]
+Neurology → [Dr. Sharma (10 yrs), Dr. Das (8 yrs)]
+Pediatrics → [Dr. Ritu (12 yrs), Dr. Anjali (7 yrs)]
+
+Query: Neurology → Dr. Sharma, Dr. Das
+
+Concepts: Collections (Map + List), Generics, Encapsulation, Streams.

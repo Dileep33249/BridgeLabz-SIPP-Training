@@ -1,0 +1,14 @@
+Function wordCount(text)
+    words = split(text)
+    map = {}
+    For word in words
+        If word in map
+            map[word]++
+        Else
+            map[word] = 1
+    Return map
+
+Main
+    text = input()
+    result = wordCount(text)
+    print result

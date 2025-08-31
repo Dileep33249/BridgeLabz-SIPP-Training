@@ -1,0 +1,15 @@
+Class Movie
+    Attributes: name, showTime, seatsAvailable
+
+Class Booking
+    Attributes: movie, seatsBooked
+    Method bookTickets(seats)
+        If movie.seatsAvailable >= seats
+            movie.seatsAvailable -= seats
+            seatsBooked += seats
+
+Main
+    movie = new Movie("Film", "6PM", 50)
+    booking = new Booking(movie)
+    booking.bookTickets(3)
+    Print booking.seatsBooked

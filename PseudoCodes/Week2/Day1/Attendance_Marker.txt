@@ -1,0 +1,12 @@
+Class Student
+    Attributes: id, name, present
+
+Class Attendance
+    Attributes: students[]
+    Method markAttendance(id, present)
+    Method displayAttendance()
+
+Main
+    attendance = new Attendance()
+    attendance.markAttendance(1, true)
+    attendance.displayAttendance()

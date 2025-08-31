@@ -1,0 +1,14 @@
+Payment Gateway Processor (Generics)
+Story: Indian e-commerce platform builds payment gateway with multiple payment types.
+
+Actors:
+- Transaction<T>: processPayment(), getTransactionDetails()
+- Payment Types: UPI, Card, NetBanking
+- Payment Gateway
+
+Story Example:
+Ramesh pays via UPI ₹1200 → Successful
+Priya pays via Card ₹5000 → Successful
+Company pays via NetBanking ₹8000 → Successful
+
+Concepts: Generics, Encapsulation, Polymorphism, Extensibility.

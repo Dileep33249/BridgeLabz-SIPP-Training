@@ -1,0 +1,14 @@
+Pseudo-code Solution - Bus Route Planner
+
+Class BusStop
+    Attributes: name
+
+Class Route
+    Attributes: stops[]
+    Method addStop(stop)
+    Method displayRoute()
+
+Main
+    Create route object
+    Add multiple bus stops
+    Display full route

@@ -1,0 +1,22 @@
+Rank List Generator (Merge Sort)
+Story: Coding competition results.
+
+Actors:
+- Student: name, marks
+- Rank List Generator (Merge Sort)
+- Event Organizer
+
+Requirements:
+- Sort students by marks (descending)
+- If tie, sort by name alphabetically
+
+Example:
+Input: Amit-92, Bhavna-92, Kiran-85, Dinesh-78, Charu-92
+Output:
+Amit-92
+Bhavna-92
+Charu-92
+Kiran-85
+Dinesh-78
+
+Concepts: Merge Sort O(n log n), Stable Sorting, Comparator Logic.

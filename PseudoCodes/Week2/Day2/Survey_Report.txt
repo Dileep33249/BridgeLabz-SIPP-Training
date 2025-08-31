@@ -1,0 +1,17 @@
+Pseudo-code Solution - Survey Report Generator
+
+Class SurveyResponse
+    Attributes: respondentId, answers[]
+
+Class Survey
+    Attributes: responses[]
+    Method addResponse(response)
+    Method generateReport()
+        For each response in responses
+            Aggregate answers
+        Display report
+
+Main
+    Create survey object
+    Add sample responses
+    Call generateReport()

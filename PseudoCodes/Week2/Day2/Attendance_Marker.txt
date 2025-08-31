@@ -1,0 +1,14 @@
+Pseudo-code Solution - Attendance Marker
+
+Class Student
+    Attributes: id, name, present(boolean)
+
+Class Attendance
+    Attributes: students[]
+    Method markAttendance(studentId, present)
+    Method displayAttendance()
+
+Main
+    Create student list
+    Mark attendance for few students
+    Display attendance report

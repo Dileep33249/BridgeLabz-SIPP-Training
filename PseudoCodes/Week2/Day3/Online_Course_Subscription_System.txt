@@ -1,0 +1,25 @@
+Online Course Subscription System
+Story: EduPrime, a growing online learning platform, offers various courses in technology, business, and arts. 
+Each course has details like Title, Duration, Price.
+Students can subscribe to multiple courses, view their list of enrolled courses, and check course details before enrolling.
+
+Actors:
+- Course: title, duration, price
+- Student: name, email, list of enrolled courses
+
+Requirements:
+- Enroll in a course (add to list)
+- View all enrolled courses
+- Prevent duplicate enrollment
+- Courses should be reusable
+
+Story Example:
+EduPrime adds courses:
+1. Java Programming Basics - 6 weeks - ₹4999
+2. Data Structures in Java - 8 weeks - ₹5999
+3. Spring Boot for Web Development - 10 weeks - ₹6999
+
+Amit enrolled in Java Programming Basics, Data Structures in Java.
+Priya enrolled in Spring Boot for Web Development, Java Programming Basics.
+
+Concepts: Encapsulation, Composition, Methods, Data Structures (ArrayList/HashSet).

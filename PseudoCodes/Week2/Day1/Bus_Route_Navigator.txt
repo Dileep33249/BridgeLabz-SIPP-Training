@@ -1,0 +1,13 @@
+Class BusStop
+    Attributes: name
+
+Class Route
+    Attributes: stops[]
+    Method addStop(stop)
+    Method displayRoute()
+
+Main
+    route = new Route()
+    route.addStop("A")
+    route.addStop("B")
+    route.displayRoute()

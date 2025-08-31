@@ -1,0 +1,14 @@
+Pseudo-code Solution - Word Counter
+
+Function wordCount(text)
+    Split text into words
+    Create empty map wordFrequency
+    For each word in words
+        If word in map then increment count
+        Else put word with count 1
+    Return wordFrequency
+
+Main
+    Take input text
+    Call wordCount(text)
+    Display word frequencies

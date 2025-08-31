@@ -1,0 +1,14 @@
+Product Search Bar (Binary Search)
+Story: ShopEase e-commerce platform with sorted product catalog.
+
+Actors:
+- Catalog (Sorted List)
+- Search Bar (Binary Search Function)
+- Customer
+
+Story Example:
+Rohan searches "Laptop" → Found.
+Priya searches "Headphones" → Not Found.
+Ali searches "Shoes" → Found.
+
+Concepts: Binary Search O(log n), Sorted Catalog, Real-Time Feedback.

@@ -1,0 +1,14 @@
+Hotel Room Reservation System
+Story: Sunrise Grand Hotel offers Deluxe Room (₹3000/night) and Suite Room (₹5000/night).
+
+Actors:
+- Room (Base Class): roomNumber, customerName, daysStayed, calculateBill()
+- DeluxeRoom (Subclass)
+- SuiteRoom (Subclass)
+- Customer: choose room type and days, receive bill
+
+Story Example:
+Ravi books Deluxe Room for 3 nights → Total ₹9000
+Anita books Suite Room for 2 nights → Total ₹10000
+
+Concepts: Inheritance, Polymorphism, Encapsulation, Reusability.

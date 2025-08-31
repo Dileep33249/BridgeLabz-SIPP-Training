@@ -1,0 +1,17 @@
+Class Question
+    Attributes: id, text, options[], correctAnswer
+
+Class Exam
+    Attributes: questions[], score
+    Method addQuestion(question)
+    Method conductExam()
+        For each question in questions
+            Display question
+            Input answer
+            If answer == correctAnswer then score++
+
+Main
+    exam = new Exam()
+    exam.addQuestion(...)
+    exam.conductExam()
+    Print exam.score

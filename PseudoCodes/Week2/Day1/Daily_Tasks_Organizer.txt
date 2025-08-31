@@ -1,0 +1,14 @@
+Class Task
+    Attributes: id, name, completed
+
+Class TaskList
+    Attributes: tasks[]
+    Method addTask(task)
+    Method completeTask(id)
+    Method displayTasks()
+
+Main
+    list = new TaskList()
+    list.addTask("Finish homework")
+    list.completeTask(1)
+    list.displayTasks()

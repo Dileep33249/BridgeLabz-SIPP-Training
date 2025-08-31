@@ -1,0 +1,19 @@
+Pseudo-code Solution - Online Exam Portal
+
+Class Question
+    Attributes: id, text, options[], correctAnswer
+
+Class Exam
+    Attributes: questions[], score
+    Method addQuestion(question)
+    Method conductExam()
+        For each question in questions
+            Display question and options
+            Take user input as answer
+            If answer == correctAnswer then score++
+
+Main
+    Create exam object
+    Add sample questions
+    Call exam.conductExam()
+    Print final score

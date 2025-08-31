@@ -1,0 +1,19 @@
+Pseudo-code Solution - Parking Lot System
+
+Class Vehicle
+    Attributes: number, type
+
+Class ParkingLot
+    Attributes: capacity, parkedVehicles[]
+    Method park(vehicle)
+        If parkedVehicles.size < capacity
+            Add vehicle
+        Else print "Lot Full"
+    Method remove(vehicleNumber)
+        Find and remove vehicle by number
+
+Main
+    Create parking lot with capacity
+    Park sample vehicles
+    Remove a vehicle
+    Display parked vehicles
